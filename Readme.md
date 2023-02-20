@@ -1,0 +1,1 @@
+Olá:) Esse projeto foi criado para aprofundar meus estudos no Javascript.
