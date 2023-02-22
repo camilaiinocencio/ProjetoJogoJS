@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #393053;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box {
+    width: 600px;
+    height: 550px;
+    background-color: #18122B;
+    border-radius: 25px;
+    border: 2px solid #443C68;
+    box-shadow: 35px -16px #181823;
+}
+
+.game-screen{
+    width: 500px;
+    height: 260px;
+    border: 3px dashed #635985;
+    margin: 40px auto;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.plane {
+    width: 150px;
+    position: absolute;
+    top: 50px;
+}
+
+.star {
+    position: absolute;
+    top: 50px;
+    right: -46px;
+    width: 46px;
+    animation: star-animation 3s infinite linear;
+}
+
+.starI {
+    position: absolute;
+    width: 40px;
+    bottom: 55px;
+    right: -40px;
+    animation: star-animation 4s infinite linear;
+}
+
+.stars {
+    position: absolute;
+    width: 45px;
+    top: 5px;
+    left: 5px;
+}
+
+/* Animations */
+
+@keyframes star-animation {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+}
