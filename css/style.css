@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 }
 body {
     background-color: #393053;
+    font-family: 'Hubballi', cursive;
 }
 
 .box {
@@ -23,38 +26,96 @@ body {
     border-radius: 25px;
     border: 2px solid #443C68;
     box-shadow: 35px -16px #181823;
+    position: relative;
 }
 
 .game-screen{
     width: 500px;
-    height: 260px;
+    height: 306px;
     border: 3px dashed #635985;
     margin: 40px auto;
     border-radius: 15px;
     position: relative;
     overflow: hidden;
+    background: linear-gradient(217deg, #52105d, rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, #41146e, rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, #843f75, rgba(0,0,255,0) 70.71%);
+}
+
+.little_screen{
+    position: absolute;
+    width: 50%;
+    top: 30px;
+    left: 120px;
+    border-radius: 15px;
+}
+
+.play {
+    width: 22%;
+    position: absolute;
+    bottom: 40px;
+    left: 188px;
+    cursor: pointer;
+}
+
+.keys {
+    width: 20%;
+    position: absolute;
+    bottom: 45px;
+    right: 120px;
+}
+
+.keyh{
+    position: absolute;
+    bottom: 36px;
+    right: 290px;
+}
+
+.button1{
+    position: absolute;
+    left: 100px;
+    bottom: 85px;
+}
+
+.button2{
+    position: absolute;
+    bottom: 123px;
+    left: 140px;
+}
+
+.button3{
+    position: absolute;
+    left: 140px;
+    bottom: 47px;
+}
+
+.button4{
+    position: absolute;
+    left: 178px;
+    bottom: 87px;
 }
 
 .plane {
     width: 150px;
     position: absolute;
-    top: 50px;
+    top: 75px;
 }
 
 .star {
     position: absolute;
     top: 50px;
-    right: -46px;
+    right: -50px;
     width: 46px;
-    animation: star-animation 3s infinite linear;
+    animation: star-animation 5s infinite linear;
+    animation-delay: 2s;
 }
 
 .starI {
     position: absolute;
     width: 40px;
-    bottom: 55px;
+    top: 215px;
     right: -40px;
-    animation: star-animation 4s infinite linear;
+    animation: star-animation 3s infinite linear;
 }
 
 .stars {
@@ -62,6 +123,13 @@ body {
     width: 45px;
     top: 5px;
     left: 5px;
+}
+
+.score {
+    position: absolute;
+    left: 50px;
+    top: 7px;
+    color: rgb(222, 217, 255);
 }
 
 /* Animations */
