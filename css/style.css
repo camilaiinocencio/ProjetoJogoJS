@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
 
 *{
     margin: 0;
@@ -7,9 +7,10 @@
 }
 body {
     background-color: #393053;
-    font-family: 'Hubballi', cursive;
+    font-family: 'Dosis', sans-serif;
 }
 
+/* Game-box */
 .box {
     width: 100vw;
     height: 100vh;
@@ -49,6 +50,8 @@ body {
     left: 120px;
     border-radius: 15px;
 }
+
+/* Buttons */
 
 .play {
     width: 22%;
@@ -95,6 +98,8 @@ body {
     bottom: 87px;
 }
 
+/* Game pieces */
+
 .plane {
     width: 150px;
     position: absolute;
@@ -107,7 +112,7 @@ body {
     right: -50px;
     width: 46px;
     animation: star-animation 5s infinite linear;
-    animation-delay: 2s;
+    animation-delay: 3s;
 }
 
 .starI {
@@ -132,7 +137,7 @@ body {
     color: rgb(222, 217, 255);
 }
 
-/* Animations */
+/* Animation */
 
 @keyframes star-animation {
     from {
